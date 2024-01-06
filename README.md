@@ -1,5 +1,7 @@
 # lib
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/limitcool/lib.svg)](https://pkg.go.dev/github.com/limitcool/lib)
+
 This is a Go language library that provides some useful functions to facilitate rapid development.
 
 [中文自述在这里.](README.zh_cn.md)
@@ -49,16 +51,16 @@ go get github.com/limitcool/lib
 ## Usage Example
 
 ```go
-package main
-
-import (
-    "fmt"
-    "github.com/limitcool/lib"
-)
-
-func main() {
-    slice := []int{1, 2, 3, 4, 3}
-    uniqueSlice := lib.Unique(slice)
-    fmt.Println(uniqueSlice) // Output: [1 2 3 4]
+package main  
+  
+import (  
+    "fmt"  
+    "github.com/limitcool/lib" 
+)  
+  
+func main() {  
+    slice := []int{1, 2, 3, 4, 3}  
+    uniqueSlice := lib.Unique(slice)  
+    fmt.Println(uniqueSlice) // Output: [1 2 3 4]  
 }
 ```

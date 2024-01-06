@@ -1,5 +1,7 @@
 # lib
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/limitcool/lib.svg)](https://pkg.go.dev/github.com/limitcool/lib)
+
 这是一个Go语言库，包含了一些实用的函数，方便您在开发中快速使用。
 
 ## 安装
