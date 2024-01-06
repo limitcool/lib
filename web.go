@@ -1,6 +1,20 @@
 package lib
 
-import "github.com/golang-jwt/jwt/v4"
+import (
+	"github.com/gin-gonic/gin"
+	"github.com/golang-jwt/jwt/v4"
+	"github.com/spf13/cast"
+)
+
+func GetPage(c *gin.Context, DefaultPageSize int) int {
+	result := 0
+	page := cast.ToInt(c.Query("page"))
+	if page > 0 {
+		result = (page - 1) * DefaultPageSize
+	}
+
+	return result
+}
 
 // ParseToken 解析和校验token
 func ParseToken(token, secret string) (*jwt.MapClaims, error) {

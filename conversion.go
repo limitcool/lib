@@ -5,9 +5,18 @@ import (
 
 	"github.com/golang/protobuf/ptypes/any"
 	"github.com/golang/protobuf/ptypes/wrappers"
+	"golang.org/x/exp/constraints"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 )
+
+func IntToBool[T constraints.Signed](a T) bool {
+	switch a {
+	case 0, -1:
+		return false
+	}
+	return true
+}
 
 func ConvertAnyToInterface(anyValue *any.Any) (interface{}, error) {
 	var value interface{}
