@@ -1,7 +1,7 @@
 # lib
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/limitcool/lib.svg)](https://pkg.go.dev/github.com/limitcool/lib)
-
+[![Go Report Card](https://goreportcard.com/badge/github.com/limitcool/lib)](https://goreportcard.com/report/github.com/limitcool/lib)
 This is a Go language library that provides some useful functions to facilitate rapid development.
 
 [中文自述在这里.](README.zh_cn.md)
@@ -60,7 +60,7 @@ go get github.com/limitcool/lib
 
 - `GetSha256Hash(str string) string`: Calculate the SHA-256 hash value of the given string and return it.
 
-### Web 
+### Web
 
 - `GetPage(c *gin.Context, DefaultPageSize int)`: Calculate the offset based on the page number parameter from the request and return it.
 - `ParseToken(token, secret string)`: Parse and validate the given token, and return the claims contained in it along with any potential errors.
@@ -73,16 +73,16 @@ go get github.com/limitcool/lib
 ## Usage Example
 
 ```go
-package main  
-  
-import (  
-    "fmt"  
-    "github.com/limitcool/lib" 
-)  
-  
-func main() {  
-    slice := []int{1, 2, 3, 4, 3}  
-    uniqueSlice := lib.Unique(slice)  
-    fmt.Println(uniqueSlice) // Output: [1 2 3 4]  
+package main
+
+import (
+    "fmt"
+    "github.com/limitcool/lib"
+)
+
+func main() {
+    slice := []int{1, 2, 3, 4, 3}
+    uniqueSlice := lib.Unique(slice)
+    fmt.Println(uniqueSlice) // Output: [1 2 3 4]
 }
 ```

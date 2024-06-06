@@ -1,6 +1,7 @@
 # lib
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/limitcool/lib.svg)](https://pkg.go.dev/github.com/limitcool/lib)
+[![Go Report Card](https://goreportcard.com/badge/github.com/limitcool/lib)](https://goreportcard.com/report/github.com/limitcool/lib)
 
 这是一个Go语言库，包含了一些实用的函数，方便您在开发中快速使用。
 
@@ -86,7 +87,7 @@ package main
 
 import (
     "fmt"
-    "github.com/limitcool/lib" // 请替换为您的实际地址
+    "github.com/limitcool/lib" 
 )
 
 func main() {
