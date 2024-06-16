@@ -15,3 +15,5 @@ func Zero[T any]() T {
 	var v T
 	return v
 }
+
+func Ptr[T any](t T) *T { return &t }
