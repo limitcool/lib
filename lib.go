@@ -17,3 +17,11 @@ func Zero[T any]() T {
 }
 
 func Ptr[T any](t T) *T { return &t }
+
+func ToInterfaceSlice[T any](slice []T) []interface{} {
+	result := make([]interface{}, len(slice))
+	for i, v := range slice {
+		result[i] = v
+	}
+	return result
+}
